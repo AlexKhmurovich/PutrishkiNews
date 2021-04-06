@@ -107,7 +107,7 @@ article{
 /*Media queries*/
 
 
-@media(max-width: 777px){
+@media(max-width: 823px){
 	body{
 		overflow-x: hidden;
 	}
@@ -167,7 +167,7 @@ article{
 }
 
 
-@media(min-width: 777px){
+@media(min-width: 823px){
 	.container section iframe{
 		margin-top: 0;
 	}	
