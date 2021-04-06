@@ -56,7 +56,7 @@ h1::selection,h2::selection,p::selection{
 	display: grid;
 	width: 80%;
 	grid-template-columns: 1fr 1fr;
-	margin: 3% auto;
+	margin: 100px auto;
 	line-height: 20px;
 }
 
@@ -155,7 +155,7 @@ article{
 	.container section{
 		grid-template-columns: 1fr;
 		line-height: 20px;
-		margin-bottom: 30%;
+		margin-bottom: 45%;
 		margin-left: 5%;
 	}
 	.container section iframe{
