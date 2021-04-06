@@ -62,7 +62,10 @@ h1::selection,h2::selection,p::selection{
 .container section iframe{
 	border: 2px solid black;
 	margin-left: 5%;
-	margin-top: 5%;	
+	margin-top: 5%;
+	width: 60%;
+	height: 110%;
+	
 }
 
 /*News*/
