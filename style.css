@@ -1,0 +1,207 @@
+body{
+	font-family: 'Montserrat', sans-serif;
+	overflow-x: hidden;
+}
+
+/* nav */
+
+nav h1 {
+	display: inline-block;
+	font-size: 1.5rem;
+}
+
+nav{
+	border-bottom: 3px solid black;
+	margin: 0;
+}
+
+nav span a{
+	color: black;
+	font-weight: 600;
+	text-decoration: none;
+	padding: 1rem;
+}
+
+.current{
+	color: #8b8b8b;
+	cursor: default;
+}
+
+.other{
+	transition: 0.5s;
+}
+
+.burger{
+	display: none;
+}
+
+.burger div{
+	background-color: black;
+	height: 2px;
+	width: 25px;
+	margin: 5px;
+	transition: 0.5s;
+}
+
+/*Video*/
+
+h1::selection,h2::selection,p::selection{
+	background-color: #ffff91;
+}
+
+.container section{
+	display: grid;
+	width: 80%;
+	margin: 0 auto;
+	grid-template-columns: 1fr 1fr;
+	margin-top: 15%;
+	margin-bottom: 20%;
+	line-height: 25px;
+}
+
+.container section iframe{
+	border: 2px solid black;
+	margin-left: 5%;
+	margin-top: 5%;
+	width: 60%;
+	height: 110%;
+	
+}
+
+/*News*/
+
+article{
+	padding: 20px;
+	border-bottom: 2px solid black;
+}
+
+.news h3{
+	font-size: 16px;
+	font-weight: 400;
+}
+.news h3:nth-of-type(2){
+	margin-bottom: 1.5em;
+}
+
+.news a{
+	background-color: #ffffff00;
+	border: 2px solid black;
+	color: black;
+	text-decoration: none;
+	outline: none;
+	cursor: pointer;
+	transition: 200ms;
+	padding: 5px;
+}
+
+.news a:hover{
+	background-color: #dbdbdb;
+}
+
+.news h2::selection, .news h3::selection{
+	background-color: #ffff91;
+}
+
+
+
+/*Media queries*/
+
+
+@media(max-width: 777px){
+	body{
+		overflow-x: hidden;
+	}
+	nav h1{
+		margin-left: 5px;
+		font-size: 1.2rem;
+	}
+	nav span a{
+		margin-bottom: 10%;
+	}
+	.other:hover{
+		font-size: 1.3rem;
+	}
+	nav span{
+		display: flex;
+		position: absolute;
+		right: 0px;
+		height: 87vh;
+		width: 100%;
+		top: 13vh;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+		margin-left: 0;
+
+		border-bottom: 3px solid black;
+		background-color: white;
+		
+		transform: translateY(-150%);
+		transition: transform 0.8s;
+	}
+
+	.container section{
+		grid-template-columns: 1fr;
+		line-height: 20px;
+		margin-top: 5%;
+		margin-bottom: 60%;
+		margin-left: 5%;
+	}
+	.container section iframe{
+		margin-left: 5%;
+		width: 100%;
+		height: 110%;
+	}	
+	section span{
+		margin-left: 5%;
+	}
+	.burger{
+		padding: 2px;
+		display: inline-block;
+		position: absolute;
+		margin: 25px;
+		top: 0;
+		right: 0;
+		cursor: pointer;
+	}
+}
+
+
+@media(min-width: 777px){
+	.container section iframe{
+		margin-top: 0;
+	}	
+
+	.container section{
+		margin-left: 18%;
+	}
+
+	body{
+		overflow-y: scroll;
+	}
+	nav span{
+		position: absolute;
+		top: 0;
+		right: 0;
+		margin: 20px;
+		margin-top:35px;
+	}
+}
+
+
+
+
+.nav-active{
+	transform: translateX(0%);
+}
+.stopScroll{
+	overflow-y: hidden;
+}
+
+.line1Rotate{
+	transform: rotate(45deg) translateY(5px);
+}
+
+.line2Rotate{
+	transform: rotate(-45deg) translateY(-5px);
+}

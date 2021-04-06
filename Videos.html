@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Putrishki News | Videos</title>
+</head>
+
+<body>
+    <nav>
+        <h1>Putrishki News</h1>
+        <span>
+            <a class="other" href="index.html">News</a>
+            <a class="other" href="Photos.html">Photos</a>
+            <a class="current" href="#">Videos</a>
+            <a class="other" href="AboutUs.html">About us</a>
+        </span>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+        </div>
+    </nav>
+    <div class="container">
+        <section>
+            <span>
+                <h1>Vzglyad Snizu</h1>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci numquam possimus reprehenderit
+                    exercitationem nihil dolorum dolores, libero odit porro ipsum.</p>
+            </span>
+            <iframe src="https://www.youtube.com/embed/1KZLSPsbKUY" title="YouTube video player" frameborder="0"
+                allow="accelerometer;clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </section>
+
+        <section class="container">
+            <span>
+                <h1>Novosty Putrishki</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo iure, molestias aliquam voluptates quod
+                    porro
+                    placeat iusto quos libero tempore?</p>
+            </span>
+            <iframe src="https://www.youtube.com/embed/smXPQMT_bPk" title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+
+        </section>
+    </div>
+
+
+
+
+
+    <script>
+        const navSlide = () => {
+            const navBtn = document.querySelector(".burger");
+            const nav = document.querySelector("nav span")
+            const body = document.body;
+            const line1 = document.querySelector(".burger div")
+            const line2 = document.querySelectorAll(".burger div")[1];
+            navBtn.addEventListener("click", function () {
+                nav.classList.toggle("nav-active")
+                body.classList.toggle("stopScroll")
+                line1.classList.toggle("line1Rotate")
+                line2.classList.toggle("line2Rotate")
+            })
+        }
+
+        navSlide();
+
+    </script>
+</body>
+
+</html>

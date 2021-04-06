@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Putrishki News</title>
+</head>
+
+<body>
+    <nav>
+        <h1>Putrishki News</h1>
+        <span>
+            <a class="current" aria-disabled="true" href="#">News</a>
+            <a class="other" href="Photos.html">Photos</a>
+            <a class="other" href="Videos.html">Videos</a>
+            <a class="other" href="AboutUs.html">About us</a>
+        </span>
+        <label class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+        </label>
+    </nav>
+    <section class="allNews">
+        <article class="news">
+            <h2>WWDC 2021</h2>
+            <h3>Alex Khmurovich</h3>
+            <h3>4/03/21</h3>
+            <a href="#">Read</a>
+        </article>
+    </section>
+
+
+    <script>
+        const navSlide = () => {
+            const navBtn = document.querySelector(".burger");
+            const line1 = document.querySelector(".burger div")
+            const line2 = document.querySelectorAll(".burger div")[1];
+            const nav = document.querySelector("nav span")
+            const body = document.body;
+            navBtn.addEventListener("click", function () {
+                nav.classList.toggle("nav-active")
+                body.classList.toggle("stopScroll")
+                line1.classList.toggle("line1Rotate")
+                line2.classList.toggle("line2Rotate")
+            })
+        }
+
+        navSlide();
+
+    </script>
+</body>
+
+</html>
