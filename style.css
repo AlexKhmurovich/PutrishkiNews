@@ -11,8 +11,12 @@ nav h1 {
 }
 
 nav{
+	background-color: white;
 	border-bottom: 3px solid black;
 	margin: 0;
+	position: sticky;
+	top: 0;
+	width: 100%;
 }
 
 nav span a{
