@@ -51,8 +51,8 @@ h1::selection,h2::selection,p::selection{
 
 .container section{
 	display: grid;
-	width: 80%;
-	justify-content: center;
+	width: 90%;
+	align-items: center;
 	margin: 0 auto;
 	grid-template-columns: 1fr 1fr;
 	margin-top: 15%;
@@ -90,12 +90,13 @@ article{
 	text-decoration: none;
 	outline: none;
 	cursor: pointer;
-	transition: 400ms;
+	transition: 0.5s ease-in;
 	padding: 5px;
 }
 
 .news a:hover{
-	background-color: #dbdbdb;
+	background-color: #b1b1b19b;
+	border-radius: 10px;
 }
 
 .news h2::selection, .news h3::selection{
@@ -137,7 +138,7 @@ article{
 		display: flex;
 		position: absolute;
 		right: 0px;
-		height: 87vh;
+		height: 90vh;
 		width: 100%;
 		top: 13vh;
 		align-items: center;
@@ -157,11 +158,11 @@ article{
 		line-height: 20px;
 		margin-top: 5%;
 		margin-bottom: 60%;
-		margin-left: 5%;
 	}
-	.container section iframe{
-		margin-left: 5%;
-	}	
+	section iframe{
+		margin-top: 20px;
+		width: 95%;
+	}
 	section span{
 		margin-left: 5%;
 	}
@@ -183,7 +184,10 @@ article{
 	}	
 
 	.container section{
-		margin-left: 18%;
+		width: 80%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
 	}
 
 	body{
@@ -210,6 +214,13 @@ article{
 	nav span a:hover{
 		background-color: #c5c5c57e;
 	}
+}
+
+@media(min-width: 1100px){
+	.container section{
+		width: 60%;
+	}
+
 }
 
 
