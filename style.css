@@ -9,6 +9,10 @@ nav h1 {
 	display: inline-block;
 	font-size: 1.5rem;
 }
+nav h1::selection {
+	display: inline-block;
+	font-size: 1.5rem;
+}
 
 nav{
 	border-bottom: 2px solid #c2c2c2;
@@ -45,9 +49,14 @@ nav span a{
 
 /*Video*/
 
-h1::selection,h2::selection,p::selection{
+section span h1{
+	margin-top: 0;
+}
+
+section h1::selection,h2::selection,p::selection{
 	background-color: #ffff91;
 }
+
 
 .container section{
 	display: grid;
@@ -90,13 +99,13 @@ article{
 	text-decoration: none;
 	outline: none;
 	cursor: pointer;
-	transition: 0.5s ease-in;
-	padding: 5px;
+	transition: 0.4s ease-in;
+	padding: 7px;
 }
 
 .news a:hover{
-	background-color: #b1b1b19b;
-	border-radius: 10px;
+	background-color: #b1b1b15e;
+	border-radius: 15px;
 }
 
 .news h2::selection, .news h3::selection{
@@ -116,6 +125,7 @@ article{
 		margin: 3% 0 auto 5%;
 	}
 }
+
 
 /*Media queries*/
 
@@ -176,6 +186,7 @@ article{
 		cursor: pointer;
 	}
 }
+
 
 
 @media(min-width: 777px){
