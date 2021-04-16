@@ -150,7 +150,8 @@ article{
 		right: 0px;
 		height: 90vh;
 		width: 100%;
-		top: 13vh;
+		top: 12vh;
+		margin: 0;
 		align-items: center;
 		justify-content: center;
 		flex-direction: column;
