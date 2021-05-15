@@ -47,6 +47,10 @@ nav span a{
 	transition: 0.5s;
 }
 
+sup{
+	font-size: 0.7em;
+}
+
 /*Video*/
 
 section span h1{
