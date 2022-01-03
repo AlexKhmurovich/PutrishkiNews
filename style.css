@@ -126,6 +126,11 @@ article{
 
 /* About us */
 
+.aboutUS img{
+	width: 200px;
+	height: 200px;
+}
+
 .aboutUs{
 	width: 90%;
 	margin: 0 auto;
