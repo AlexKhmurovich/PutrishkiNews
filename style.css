@@ -65,7 +65,8 @@ section span h1 sup{
 	color: white;
 	background-color: rgb(26, 114, 201);
 	padding: 2px;
-	font-size: 10px;
+	font-size: 15px;
+	border-radius: 5px;
 }
 
 .container section{
