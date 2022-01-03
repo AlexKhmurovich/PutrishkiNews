@@ -67,14 +67,7 @@ section span h1 sup{
 	padding: 3px;
 	font-size: 15px;
 	border-radius: 5px;
-}
-
-section span h1 sup::selection{
-	color: white;
-	background-color: rgb(26, 114, 201);
-	padding: 3px;
-	font-size: 15px;
-	border-radius: 5px;
+	user-select: none
 }
 
 .container section{
