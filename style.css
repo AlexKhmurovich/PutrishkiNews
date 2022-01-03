@@ -61,6 +61,10 @@ section h1::selection,h2::selection,p::selection{
 	background-color: #ffff91;
 }
 
+section span h1 sup{
+	color: white;
+	background-color: rgb(26, 114, 201);
+}
 
 .container section{
 	display: grid;
