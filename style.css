@@ -157,6 +157,7 @@ article{
 
 .AboutLink{
 	color: rgb(26, 114, 201);
+	transition: 0.2s;
 }
 
 .AboutLink:hover{
