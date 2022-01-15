@@ -157,10 +157,11 @@ article{
 
 .AboutLink{
 	color: rgb(26, 114, 201);
-	transition: 0.2s;
+	transition: 0.3s;
 }
 
 .AboutLink:hover{
+	font-size: 1.2em;
 	color: rgb(201, 26, 38);
 }
 
