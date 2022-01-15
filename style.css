@@ -143,14 +143,14 @@ article{
 	}
 }
 
-.aboutUs .email{
+.email{
 	text-decoration: none;
 	color: black;
 	font-weight: bold;
 	transition: 0.3s;
 }
 
-.aboutUs .email:hover{
+.email:hover{
 	font-size: 1.3em;
 	color: rgb(221, 72, 72);
 }
