@@ -155,6 +155,10 @@ article{
    	user-select: none;
 }
 
+.AboutUs p::selction{
+	background-color: #ffff91;
+}
+
 .email:hover{
 	font-size: 1.3em;
 	color: rgb(221, 72, 72);
